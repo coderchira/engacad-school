@@ -2,21 +2,58 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <!--css files-->
-    <link href="Content/bootstrap.css" rel="stylesheet" />
+
     <!--js files-->
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/angular.js"></script>
     <script src="Scripts/angular-route.js"></script>
+    <!--css files-->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.superhero.css" rel="stylesheet" />
     <!--modules-->
     <script src="ng/modules/myApp.js"></script>
     <!--routes-->
     <script src="ng/routes/appRoutes.js"></script>
     <!--controllers-->
     <script src="ng/controllers/mainController.js"></script>
+    <script src="ng/controllers/myCoursesController.js"></script>
+    <script src="ng/controllers/enggCoursesController.js"></script>
+    <script src="ng/controllers/allTrainingsController.js"></script>
 </head>
 <body ng-app="myApp">
-  <div ng-view=""></div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="mycourses.html">ENG Academy School</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a ng-click="login()">My Courses</a></li>
+                            <li><a ng-click="">All ENG Courses</a></li>
+                            <li><a ng-click="">All Trainings</a></li>
+                            <li class="divider"></li>
+                            <li><a ng-click="">ETA Courses</a></li>
+                            <li class="divider"></li>
+                            <li><a ng-click="">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <div ng-view=""></div>
 </body>
 </html>

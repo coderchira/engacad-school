@@ -1,0 +1,20 @@
+﻿
+<div>
+    <p>Welcome to my Courses page  </p>
+    <div class="col-md-6 col-md-offset-3">
+        <table class="table table-responsive">
+            <thead>
+                <tr class="active">
+                    <td><h3>Course Name</h3></td>
+                    <td><h3>Course ID</h3></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="course in courses">
+                    <td><h4>{{course.name}}</h4></td>
+                    <td><h4>{{course.id}}</h4></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

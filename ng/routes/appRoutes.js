@@ -4,6 +4,9 @@
         $routeProvider
         .when("/", { templateUrl: "ng/views/login.html", controller: "mainController" })
         .when("/login", { templateUrl: "ng/views/login.html", controller: "mainController" })
-        .otherwise({redirectTo:"/"})
+        .when("/mycourses", { templateUrl: "ng/views/mycourses.html", controller: "myCoursesController" })
+        .when("/enggcourses", { templateUrl: "ng/views/enggcourses.html", controller: "enggCoursesController" })
+        .when("/alltrainings", { templateUrl: "ng/views/alltrainings.html", controller: "allTrainingsController" })
+        .otherwise({ redirectTo: "/" })
     })
 })();
