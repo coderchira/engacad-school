@@ -1,5 +1,5 @@
 ﻿(function () {
-    var myCoursesController = angular.module("myApp").controller("myCoursesController", function ($scope) {
+    var empCoursesController = angular.module("myApp").controller("empCoursesController", function ($scope) {
         console.log("inside my courses controller");
         $scope.courses =
             [
