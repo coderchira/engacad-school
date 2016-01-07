@@ -1,5 +1,5 @@
 ﻿(function () {
-    var srvCourses = angular.module("myApp").service("srvCourses", function ($http,$q) {
+    var srvCourse = angular.module("myApp").service("srvCourse", function ($http,$q) {
         this.getAll = function () {
             var deferred = $q.defer();
             var url = "http://vpunplepun2-01:8085/data/courses.json";
