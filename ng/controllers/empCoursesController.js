@@ -1,6 +1,6 @@
 ﻿(function () {
     var empCoursesController = angular.module("myApp").controller("empCoursesController", function ($scope) {
-        console.log("inside my courses controller");
+        console.log("inside emp courses controller");
         $scope.courses =
             [
                 { name: "VB.Net Jumpstart", id: "CENG1" },

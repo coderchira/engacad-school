@@ -1,4 +1,23 @@
-﻿<div class="col-md-6 well">
-    <p>{{messages.message}} all trainings page</p>
-    <p>{{trainings.training.name}}</p>
+﻿<div class="col-md-6 col-md-offset-3">
+    <p>Welcome to trainings page</p>
+    <table class="table table-responsive">
+        <thead>
+            <tr class="active">
+                <td><h3>Course Name</h3></td>
+                <td><h3>Course ID</h3></td>
+                <td><h3>Training ID</h3></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="course in courses">
+                <td><h4>{{course.name}}</h4></td>
+                <td><h4>{{course.id}}</h4></td>
+                <td>
+                    <ul ng-repeat="training in course.trainings">
+                        <li><h5>{{training.id}}</h5></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
