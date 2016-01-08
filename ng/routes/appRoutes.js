@@ -8,6 +8,7 @@
         .when("/employees/id/courses", { templateUrl: "ng/views/empcourses.html", controller: "empCoursesController" })
         .when("/courses", { templateUrl: "ng/views/courses.html", controller: "coursesController" })
         .when("/courses/id/trainings", { templateUrl: "ng/views/trainings.html", controller: "trainingsController" })
+        .when("/trainings/id/attendance", { templateUrl: "ng/views/attendance.html", controller: "trainingsController" })
         .otherwise({ redirectTo: "/" })
     })
 })();

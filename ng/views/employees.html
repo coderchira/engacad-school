@@ -3,13 +3,17 @@
             <thead>
                 <tr class="active">
                     <td><h3>Employee Number</h3></td>
+                    <td><h3>Email Id</h3></td>
                     <td><h3>Role</h3></td>
+                    <td><h3>Location</h3></td>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="emp in employees">
                     <td><h4>{{emp.empno}}</h4></td>
+                    <td><h4>{{emp.email}}</h4></td>
                     <td><h4>{{emp.role.title}}</h4></td>
+                    <td><h4>{{emp.location.title}}</h4></td>
                 </tr>
             </tbody>
         </table>
